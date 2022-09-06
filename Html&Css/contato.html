@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-contato.css">
+    <title>Contato - Barbearia Alura</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <img id = 'logo' src="logo.png" alt="Logo do Viado">
+
+            <nav>
+                <ul id="navegacao">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="produtos.html">Produtos</a> </li>
+                    <li> <a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <form action="">
+            <Label for="nome">Nome e sobrenome: </Label>
+            <input type="text" id="nome" class="input-padrao" required>
+
+            <Label for="email">Email: </Label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <Label for="tel">Tel: </Label>
+            <input type="tel" id="tel" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+            
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="email_radio"><input type="radio" name="contato" value="email" id="email_radio"> Email</label>
+                
+
+                <label for="tel_radio"><input type="radio" name="contato" value="telefone" id="tel_radio"> Telefone</label>
+                
+
+                <label for="what_radio"><input type="radio" name="contato" value="whatsapp" id="what_radio" checked> Whatsapp</label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horario prefere ser atendido?</legend>
+                <select>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
+            </fieldset>
+
+            <label for="viado_email"><input class="checkbox" type="checkbox" name="viado_email" checked>
+                Gostaria de receber nossas novidades de viadagem por email? 
+            </label>
+            
+            <input type="submit" value="Enviar formulario" id="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>8h-20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>9h-18h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <img src="jackie-chan-1.webp" alt="Footer boiola">
+        <p>Copyright - ViadaoVitao - 2022 &copy;</p>
+    </footer>
+    
+</body>
+</html>
